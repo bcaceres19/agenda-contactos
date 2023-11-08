@@ -1,4 +1,4 @@
-from config.conexion import Conexion
+from config.conexionBd import Conexion
 
 class UsuariosService():
     def __init__(self):

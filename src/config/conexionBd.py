@@ -17,6 +17,22 @@ class Conexion:
         config = configparser.ConfigParser()
         config.read(self.config)
         return config['database']
+    
+    def crearBd(self):
+        consultaBd = "SHOW DATABASES LIKE 'agenda'"
+        self.cursor.execute(consultaBd)
+        # Recupera los resultados
+        bd_existe = self.cursor.fetchone()
+        if not bd_existe:
+            crear_base_de_datos = "CREATE DATABASE agenda"
+            self.cursor.execute(crear_base_de_datos)
+
+            self.cursor.execute("USE agenda")
+            with open('agenda-contactos/src/util/bd.sql', 'r') as sql_file:
+                sql_script = sql_file.read()
+            self.cursor.execute(sql_script)
+        self.conexion.commit()
+        self.cerrar()
 
     def estConexion(self):
         try:
@@ -24,7 +40,7 @@ class Conexion:
                 host = self.dbConfig['host'],
                 user = self.dbConfig['username'],
                 password= self.dbConfig['password'],
-                database= self.dbConfig['database']
+                database= None
             )
     
             cursor = con.cursor()
