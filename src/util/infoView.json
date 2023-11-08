@@ -1,0 +1,91 @@
+{
+    "root":{
+        "fondoRoot": "#FFFFFE",
+        "configFrame":{
+            "ancho": 375,
+            "alto": 812,
+            "fondoColor": "#FFFFFE",
+            "bordeColor": "F5F5F5"
+        }
+    }, 
+    "vistaRegistro":{
+        "botones": [
+            {
+                "text": "Registrarse", 
+                "fondoColor": "#5E0E90", 
+                "textColor":"#F5F4F2", 
+                "bordeColor":"#5E0E90",
+                "fondoColorMouse": "#8A4CF6",
+                "ancho": 319,
+                "alto": 63,
+                "redondeo": 31.5,
+                "tamañoLetra": 18,
+                "tipoLetra": "Mullish",
+                "comando": "registrar"
+            },
+            {
+                "text": "Inicio Sesión", 
+                "fondoColor": "#EBEBEB", 
+                "textColor":"#241C1C", 
+                "bordeColor":"#EBEBEB",
+                "fondoColorMouse": "#CCCCCC",
+                "ancho": 319,
+                "alto": 63,
+                "redondeo": 31.5,
+                "tamañoLetra": 18,
+                "tipoLetra": "Mullish",
+                "comando": "registrar"
+            }
+        ],
+        "camposTexto": [
+            {
+                "texto":"Email", 
+                "fondoColor": "#F5F4F2", 
+                "textColor":"#241C1C", 
+                "bordeColor":"#F5F4F2",
+                "ancho":319,
+                "alto":63,
+                "redondeo": 31.5,
+                "tamañoLetra": 18,
+                "tipoLetra": "Mullish"
+            },
+            {
+                "texto":"Contraseña", 
+                "fondoColor": "#F5F4F2", 
+                "textColor":"#241C1C", 
+                "bordeColor":"#F5F4F2",
+                "ancho":319,
+                "alto":63,
+                "redondeo": 31.5,
+                "tamañoLetra": 18,
+                "tipoLetra": "Mullish"
+            },
+            {
+                "texto":"Confirmar Contraseña", 
+                "fondoColor": "#F5F4F2", 
+                "textColor":"#241C1C", 
+                "bordeColor":"#F5F4F2",
+                "ancho":319,
+                "alto":63,
+                "redondeo": 31.5,
+                "tamañoLetra": 18,
+                "tipoLetra": "Mullish"
+            }
+        ],
+        "textos":[
+            {
+                "imagen":"agenda-contactos/src/util/img/contacto.png"
+            },
+            {
+                "texto":"Registrar", 
+                "fondoColor": "#FFFFFE", 
+                "textColor":"#060505", 
+                "ancho":700,
+                "alto": 64,
+                "tamañoLetra": 36,
+                "tipoLetra": "Mullish"
+            }
+        ]
+        
+    }
+}

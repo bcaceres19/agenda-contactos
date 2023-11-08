@@ -2,3 +2,5 @@ mysql-connector-python
 pip-tools
 customtkinter
 packaging
+Pillow
+screeninfo

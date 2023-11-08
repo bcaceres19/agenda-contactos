@@ -1,9 +1,8 @@
-from config import conexion
+from view import App
 
 def main():
-    dbConexion = conexion.Conexion()
-
-    dbConexion.cerrar()
+    app = App()
+    app.mainloop()
 
 if __name__ == "__main__":
     main()
