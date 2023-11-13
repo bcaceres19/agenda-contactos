@@ -288,11 +288,11 @@
             },
             {
                 "text": "Buscar", 
+                "ancho": 103,
                 "fondoColor": "#5E0E90", 
                 "textColor":"#F5F4F2", 
                 "bordeColor":"#5E0E90",
                 "fondoColorMouse": "#8A4CF6",
-                "ancho": 103,
                 "alto": 39,
                 "redondeo":10,
                 "tamañoLetra": 18,
@@ -306,5 +306,138 @@
                 "posicionB": "e"
             }
         ]
+    },
+    "vistaInicioSesion":{
+        "botones": [
+            {
+                "text": "Iniciar Sesión", 
+                "fondoColor": "#5E0E90", 
+                "textColor":"#F5F4F2", 
+                "bordeColor":"#5E0E90",
+                "fondoColorMouse": "#8A4CF6",
+                "ancho": 319,
+                "alto": 63,
+                "redondeo": 31.5,
+                "tamañoLetra": 18,
+                "tipoLetra": "Mullish",
+                "comando": "registrar"
+            },
+            {
+                "text": "Registrarse", 
+                "fondoColor": "#EBEBEB", 
+                "textColor":"#241C1C", 
+                "bordeColor":"#EBEBEB",
+                "fondoColorMouse": "#CCCCCC",
+                "ancho": 319,
+                "alto": 63,
+                "redondeo": 31.5,
+                "tamañoLetra": 18,
+                "tipoLetra": "Mullish",
+                "comando": "registrar"
+            }
+        ],
+        "camposTexto": [
+            {
+                "texto":"Email", 
+                "fondoColor": "#F5F4F2", 
+                "textColor":"#241C1C", 
+                "bordeColor":"#F5F4F2",
+                "ancho":319,
+                "alto":63,
+                "redondeo": 31.5,
+                "tamañoLetra": 18,
+                "tipoLetra": "Mullish"
+            },
+            {
+                "texto":"Contraseña", 
+                "fondoColor": "#F5F4F2", 
+                "textColor":"#241C1C", 
+                "bordeColor":"#F5F4F2",
+                "ancho":319,
+                "alto":63,
+                "redondeo": 31.5,
+                "tamañoLetra": 18,
+                "tipoLetra": "Mullish"
+            }
+        ],
+        "textos":[
+            {
+                "imagen":"src/util/img/contacto.png"
+            },
+            {
+                "texto":"Inicio Sesión", 
+                "fondoColor": "#FFFFFE", 
+                "textColor":"#060505", 
+                "ancho":700,
+                "alto": 64,
+                "tamañoLetra": 36,
+                "tipoLetra": "Mullish"
+            }
+        ]
+        
+    }, 
+    "vistaModificar":{
+        "botones": [
+            {
+                "text": "Modificar", 
+                "fondoColor": "#5E0E90", 
+                "textColor":"#F5F4F2", 
+                "bordeColor":"#5E0E90",
+                "fondoColorMouse": "#8A4CF6",
+                "ancho": 319,
+                "alto": 63,
+                "redondeo": 31.5,
+                "tamañoLetra": 18,
+                "tipoLetra": "Mullish",
+                "comando": "registrar"
+            }
+        ],
+        "camposTexto": [
+            {
+                "texto":"Nombre", 
+                "fondoColor": "#F5F4F2", 
+                "textColor":"#241C1C", 
+                "bordeColor":"#F5F4F2",
+                "ancho":319,
+                "alto":63,
+                "redondeo": 31.5,
+                "tamañoLetra": 18,
+                "tipoLetra": "Mullish"
+            },
+            {
+                "texto":"Apellido", 
+                "fondoColor": "#F5F4F2", 
+                "textColor":"#241C1C", 
+                "bordeColor":"#F5F4F2",
+                "ancho":319,
+                "alto":63,
+                "redondeo": 31.5,
+                "tamañoLetra": 18,
+                "tipoLetra": "Mullish"
+            },
+            {
+                "texto":"Teléfono", 
+                "fondoColor": "#F5F4F2", 
+                "textColor":"#241C1C", 
+                "bordeColor":"#F5F4F2",
+                "ancho":319,
+                "alto":63,
+                "redondeo": 31.5,
+                "tamañoLetra": 18,
+                "tipoLetra": "Mullish"
+            }
+        ],
+        "textos":[
+            {
+                "texto":"Modificar Contacto", 
+                "fondoColor": "#FFFFFE", 
+                "textColor":"#060505", 
+                "ancho":700,
+                "alto": 64,
+                "tamañoLetra": 36,
+                "tipoLetra": "Mullish"
+            }
+        ]
+        
     }
 }

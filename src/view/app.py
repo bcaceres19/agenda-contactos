@@ -2,6 +2,8 @@ import customtkinter
 from .frame.registro_view import Registro
 from .frame.menu_view import Menu
 from .frame.contactos_view import Contactos
+from .frame.InicioSesion_view import InicioSesion
+from .frame.Modificar_view import Modificar
 from screeninfo import get_monitors
 from config.configViews import Configuracion
 
@@ -15,7 +17,8 @@ class App(customtkinter.CTk):
         altoPantalla = self.informacionMonitor().get("alto")
         self.geometry(f"{anchoPantalla}x{altoPantalla}")
         self.configure(fg_color=root.get("fondoRoot"))
-        self.frameRegistro = Registro(
+
+        self.frameInicioSesion = InicioSesion(
             master=self, 
             width=self.frame.get("ancho"), 
             height=self.frame.get("alto"), 
@@ -23,7 +26,7 @@ class App(customtkinter.CTk):
             border_color=self.frame.get("bordeColor")
             )
 
-        self.frameRegistro.grid(row=1, column=1, sticky="nsew")
+        self.frameInicioSesion.grid(row=1, column=1, sticky="nsew")
         self.grid_rowconfigure(0, weight=1)
         self.grid_rowconfigure(2, weight=1)
         self.grid_columnconfigure(0, weight=1)
