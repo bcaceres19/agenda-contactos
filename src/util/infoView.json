@@ -21,7 +21,11 @@
                 "redondeo": 31.5,
                 "tamañoLetra": 18,
                 "tipoLetra": "Mullish",
-                "comando": "registrar"
+                "comando": "registrar",
+                "fila":5,
+                "columna":1,
+                "posicion":"CENTER",
+                "y":3
             },
             {
                 "text": "Inicio Sesión", 
@@ -34,7 +38,11 @@
                 "redondeo": 31.5,
                 "tamañoLetra": 18,
                 "tipoLetra": "Mullish",
-                "comando": "registrar"
+                "comando": "registrar",
+                "fila":6,
+                "columna":1,
+                "posicion":"CENTER",
+                "y":3
             }
         ],
         "camposTexto": [
@@ -47,7 +55,9 @@
                 "alto":63,
                 "redondeo": 31.5,
                 "tamañoLetra": 18,
-                "tipoLetra": "Mullish"
+                "tipoLetra": "Mullish",
+                "fila":2,
+                "columna":1
             },
             {
                 "texto":"Contraseña", 
@@ -58,7 +68,9 @@
                 "alto":63,
                 "redondeo": 31.5,
                 "tamañoLetra": 18,
-                "tipoLetra": "Mullish"
+                "tipoLetra": "Mullish",
+                "fila":3,
+                "columna":1
             },
             {
                 "texto":"Confirmar Contraseña", 
@@ -69,12 +81,20 @@
                 "alto":63,
                 "redondeo": 31.5,
                 "tamañoLetra": 18,
-                "tipoLetra": "Mullish"
+                "tipoLetra": "Mullish",
+                "fila":4,
+                "columna":1
             }
         ],
         "textos":[
             {
-                "imagen":"agenda-contactos/src/util/img/contacto.png"
+                "imagen":"src/util/img/contacto.png",
+                "direccionImg": "left",
+                "anchoImg": 100,
+                "altoImg": 69,
+                "fila": 0,
+                "columna": 1,
+                "posicion":"center"
             },
             {
                 "texto":"Registrar", 
@@ -83,9 +103,208 @@
                 "ancho":700,
                 "alto": 64,
                 "tamañoLetra": 36,
-                "tipoLetra": "Mullish"
+                "tipoLetra": "Mullish",
+                "fila": 1,
+                "columna": 1,
+                "posicion":"center"
             }
         ]
         
+    },
+    "vistaMenu": {
+        "textos":[
+            {
+                "texto":"Menú", 
+                "fondoColor": "#FFFFFE", 
+                "textColor":"#060505", 
+                "ancho":288,
+                "alto": 64,
+                "tamañoLetra": 36,
+                "tipoLetra": "Mullish",
+                "anchoImg": 100,
+                "altoImg": 70,
+                "fila": 0,
+                "columna":0,
+                "imagen": "src/util/img/contacto.png",
+                "direccionImg":"left",
+                "posicion":"w"
+            }
+        ],
+        "botones":[
+            { 
+                "text": "Registrar nuevo contacto", 
+                "fondoColor": "#FFFFFE", 
+                "textColor":"#060505", 
+                "bordeColor":"#FFFFFE",
+                "fondoColorMouse": "#CCCCCC",
+                "ancho": 288,
+                "alto": 63,
+                "redondeo": 0,
+                "tamañoLetra": 18,
+                "tipoLetra": "Mullish",
+                "comando":"prueba",
+                "fila":1,
+                "columna":0,
+                "imagen": "src/util/img/registro.png",
+                "anchoImg":47,
+                "altoImg":40,
+                "direccionImg":"left",
+                "posicion":"w",
+                "y":10,
+                "x":10
+
+            },
+            { 
+                "text": "Lista de contactos", 
+                "fondoColor": "#FFFFFE", 
+                "textColor":"#060505", 
+                "bordeColor":"#FFFFFE",
+                "fondoColorMouse": "#CCCCCC",
+                "ancho": 288,
+                "alto": 63,
+                "redondeo": 0,
+                "tamañoLetra": 18,
+                "tipoLetra": "Mullish",
+                "comando":"prueba",
+                "fila":2,
+                "columna":0,
+                "imagen": "src/util/img/portapapeles.png",
+                "anchoImg":47,
+                "altoImg":40,
+                "direccionImg":"left",
+                "posicion":"w",
+                "y":10,
+                "x":10
+            },
+            { 
+                "text": "Salir", 
+                "fondoColor": "#FFFFFE", 
+                "textColor":"#060505", 
+                "bordeColor":"#FFFFFE",
+                "fondoColorMouse": "#CCCCCC",
+                "ancho": 288,
+                "alto": 63,
+                "redondeo": 0,
+                "tamañoLetra": 18,
+                "tipoLetra": "Mullish",
+                "comando":"prueba",
+                "fila":3,
+                "columna":0,
+                "imagen": "src/util/img/candado.png",
+                "anchoImg":47,
+                "altoImg":40,
+                "direccionImg":"left",
+                "posicion":"w",
+                "y":10,
+                "x":10
+            }
+        ]
+    },
+    "vistaContactos": {
+        "campoTexto":[
+            {
+                "texto":"Buscar contacto", 
+                "fondoColor": "#FFFFFF", 
+                "textColor":"#979797", 
+                "bordeColor":"#D6D6D6",
+                "ancho":345,
+                "alto":41,
+                "redondeo": 10,
+                "tamañoLetra": 18,
+                "tipoLetra": "Mullish",
+                "fila":0,
+                "columna":1,
+                "imagen": "src/util/img/lupa.png",
+                "anchoImg":27.04,
+                "altoImg":27.04
+            }
+        ],
+        "cabeceraT": [
+            "nombreContacto",
+            "numeroTelefono"
+        ],
+        "textoC":[
+            {
+                "texto":"Nombre Completo", 
+                "id": "nombreContacto"
+            },
+            {
+                "texto":"Télefono", 
+                "id": "numeroTelefono"
+            }
+        ],
+        "contenidoT":[
+            {
+                "nombre":"Nombre Completo", 
+                "telefono": "nombre"
+            },
+            {
+                "nombre":"Nombre Completo", 
+                "telefono": "nombre"
+            },
+            {
+                "nombre":"Nombre Completo", 
+                "telefono": "nombre"
+            }
+        ],
+        "botones":[
+            {
+                "text": "Actualizar", 
+                "fondoColor": "green", 
+                "textColor":"#FFFFFE", 
+                "bordeColor":"green",
+                "fondoColorMouse": "#CCCCCC",
+                "ancho": 103,
+                "alto": 39,
+                "redondeo": 31.5,
+                "tamañoLetra": 18,
+                "tipoLetra": "Mullish",
+                "comando":"prueba",
+                "fila":2,
+                "columna":1,
+                "posicion":"CENTER",
+                "y":3,
+                "x":0,
+                "posicionB": "w"
+            },
+            {
+                "text": "Eliminar", 
+                "fondoColor": "red", 
+                "textColor":"#FFFFFE", 
+                "bordeColor":"red",
+                "fondoColorMouse": "#CCCCCC",
+                "ancho": 103,
+                "alto": 39,
+                "redondeo": 31.5,
+                "tamañoLetra": 18,
+                "tipoLetra": "Mullish",
+                "comando":"prueba",
+                "fila":2,
+                "columna":1,
+                "posicion":"CENTER",
+                "y":3,
+                "x":0,
+                "posicionB": "e"
+            },
+            {
+                "text": "Buscar", 
+                "fondoColor": "#5E0E90", 
+                "textColor":"#F5F4F2", 
+                "bordeColor":"#5E0E90",
+                "fondoColorMouse": "#8A4CF6",
+                "ancho": 103,
+                "alto": 39,
+                "redondeo":10,
+                "tamañoLetra": 18,
+                "tipoLetra": "Mullish",
+                "comando":"dataNombre",
+                "fila":0,
+                "columna":1,
+                "posicion":"CENTER",
+                "y":0,
+                "x":0,
+                "posicionB": "e"
+            }
+        ]
     }
 }

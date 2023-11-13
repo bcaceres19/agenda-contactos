@@ -5,7 +5,7 @@ import mysql.connector
 class Conexion:
     def __init__(self, config=None):
         if config is None:
-            config_path = os.path.abspath('agenda-contactos/config.ini')
+            config_path = os.path.abspath('config.ini')
         else:
             config_path = os.path.abspath(config)
         self.config = config_path
@@ -28,11 +28,12 @@ class Conexion:
             self.cursor.execute(crear_base_de_datos)
 
             self.cursor.execute("USE agenda")
-            with open('agenda-contactos/src/util/bd.sql', 'r') as sql_file:
+            with open('src/util/bd.sql', 'r') as sql_file:
                 sql_script = sql_file.read()
-            self.cursor.execute(sql_script)
+            self.cursor.execute(sql_script)        
         self.conexion.commit()
         self.cerrar()
+
 
     def estConexion(self):
         try:
@@ -40,7 +41,7 @@ class Conexion:
                 host = self.dbConfig['host'],
                 user = self.dbConfig['username'],
                 password= self.dbConfig['password'],
-                database= None
+                database= self.dbConfig['database']
             )
     
             cursor = con.cursor()

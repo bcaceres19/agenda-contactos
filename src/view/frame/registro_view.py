@@ -18,7 +18,6 @@ class Registro(ctk.CTkFrame):
 
         for texto in infotTextos:
             Texto(self,informacion=texto)
-
         for campo in infoCampos:
            self.campos.append(CampoTexto(self, informacion=campo))
 
@@ -31,6 +30,7 @@ class Registro(ctk.CTkFrame):
         informacion["email"] = self.campos[0].tenerContenido()
         informacion["contra"] = self.campos[1].tenerContenido()
         print(usuario.crearUsuario(data=informacion))
+        self.master.cambiarFrameContactos()
 
     def getComando(self, comando):
         if hasattr(self, comando):
