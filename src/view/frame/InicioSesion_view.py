@@ -5,15 +5,15 @@ from ..widgets.texto import Texto
 from config.configViews import Configuracion
 from controller.usuarioController import UsuarioController
 
-class Registro(ctk.CTkFrame):
+class InicioSesion(ctk.CTkFrame):
     def __init__(self, master,**kwargs):
         super().__init__(master, **kwargs)
 
         config = Configuracion().config
         
-        infotTextos = config["vistaRegistro"]["textos"]
-        botones = config["vistaRegistro"]["botones"]
-        infoCampos = config["vistaRegistro"]["camposTexto"]
+        infotTextos = config["vistaInicioSesion"]["textos"]
+        botones = config["vistaInicioSesion"]["botones"]
+        infoCampos = config["vistaInicioSesion"]["camposTexto"]
         self.campos = []
 
         for texto in infotTextos:
@@ -36,7 +36,4 @@ class Registro(ctk.CTkFrame):
         if hasattr(self, comando):
             return getattr(self, comando)
         else:
-            return None
-
-
-    
+            return None       
