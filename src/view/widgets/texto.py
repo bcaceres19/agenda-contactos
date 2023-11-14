@@ -10,7 +10,7 @@ class Texto(CTkLabel):
             self.generarImagen(informacion)
         elif "textoT" in informacion:
             self.generarTabla(informacion)
-        self.grid(row=informacion.get("fila"), column=informacion.get("columna"))
+        self.grid(row=informacion.get("fila"), column=informacion.get("columna"), pady=informacion.get("y"), padx=informacion.get("x"))
 
     def generarImagen(self, informacion):
         try:

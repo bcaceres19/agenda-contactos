@@ -38,7 +38,7 @@
                 "redondeo": 31.5,
                 "tamañoLetra": 18,
                 "tipoLetra": "Mullish",
-                "comando": "registrar",
+                "comando": "cambiarFrameIs",
                 "fila":6,
                 "columna":1,
                 "posicion":"CENTER",
@@ -57,7 +57,8 @@
                 "tamañoLetra": 18,
                 "tipoLetra": "Mullish",
                 "fila":2,
-                "columna":1
+                "columna":1,
+                "comandoValidador":"validarEmail"
             },
             {
                 "texto":"Contraseña", 
@@ -70,7 +71,9 @@
                 "tamañoLetra": 18,
                 "tipoLetra": "Mullish",
                 "fila":3,
-                "columna":1
+                "columna":1,
+                "tipo":"*",
+                "comandoValidador":""
             },
             {
                 "texto":"Confirmar Contraseña", 
@@ -83,7 +86,9 @@
                 "tamañoLetra": 18,
                 "tipoLetra": "Mullish",
                 "fila":4,
-                "columna":1
+                "columna":1,
+                "tipo":"*",
+                "comandoValidador":""
             }
         ],
         "textos":[
@@ -108,8 +113,25 @@
                 "columna": 1,
                 "posicion":"center"
             }
-        ]
-        
+        ],
+        "ventanaMensaje":[
+            {
+                "texto":"Usuario registrado satisfactoriamente",
+                "fondoColor": "#FFFFFE", 
+                "textColor":"#060505", 
+                "tipoLetra": "Mullish",
+                "icono":"check",
+                "titulo":"Registrado"
+            },
+            {
+                "texto":"Correo registrado, coloca otro porfavor",
+                "fondoColor": "#FFFFFE", 
+                "textColor":"#060505", 
+                "tipoLetra": "Mullish",
+                "icono":"cancel",
+                "titulo":"Error"
+            }
+        ]    
     },
     "vistaMenu": {
         "textos":[
@@ -142,7 +164,7 @@
                 "redondeo": 0,
                 "tamañoLetra": 18,
                 "tipoLetra": "Mullish",
-                "comando":"prueba",
+                "comando":"cambiarFramReC",
                 "fila":1,
                 "columna":0,
                 "imagen": "src/util/img/registro.png",
@@ -165,7 +187,7 @@
                 "redondeo": 0,
                 "tamañoLetra": 18,
                 "tipoLetra": "Mullish",
-                "comando":"prueba",
+                "comando":"cambiarFrameContactos",
                 "fila":2,
                 "columna":0,
                 "imagen": "src/util/img/portapapeles.png",
@@ -187,7 +209,7 @@
                 "redondeo": 0,
                 "tamañoLetra": 18,
                 "tipoLetra": "Mullish",
-                "comando":"prueba",
+                "comando":"cambiarFrameIs",
                 "fila":3,
                 "columna":0,
                 "imagen": "src/util/img/candado.png",
@@ -216,7 +238,8 @@
                 "columna":1,
                 "imagen": "src/util/img/lupa.png",
                 "anchoImg":27.04,
-                "altoImg":27.04
+                "altoImg":27.04,
+                "comandoValidador":"validarEmail"
             }
         ],
         "cabeceraT": [
@@ -259,7 +282,7 @@
                 "redondeo": 31.5,
                 "tamañoLetra": 18,
                 "tipoLetra": "Mullish",
-                "comando":"prueba",
+                "comando":"actualizarContacto",
                 "fila":2,
                 "columna":1,
                 "posicion":"CENTER",
@@ -278,7 +301,7 @@
                 "redondeo": 31.5,
                 "tamañoLetra": 18,
                 "tipoLetra": "Mullish",
-                "comando":"prueba",
+                "comando":"eliminarRegistro",
                 "fila":2,
                 "columna":1,
                 "posicion":"CENTER",
@@ -305,7 +328,17 @@
                 "x":0,
                 "posicionB": "e"
             }
-        ]
+        ],
+        "ventanaMensaje":[
+            {
+                "texto":"Contacto eliminado satisfactoriamente",
+                "fondoColor": "#FFFFFE", 
+                "textColor":"#060505", 
+                "tipoLetra": "Mullish",
+                "icono":"check",
+                "titulo":"Eliminado"
+            }
+        ]    
     },
     "vistaInicioSesion":{
         "botones": [
@@ -320,7 +353,11 @@
                 "redondeo": 31.5,
                 "tamañoLetra": 18,
                 "tipoLetra": "Mullish",
-                "comando": "registrar"
+                "comando": "iniciarSesion",
+                "fila":4,
+                "columna":1,
+                "posicion":"CENTER",
+                "y":3
             },
             {
                 "text": "Registrarse", 
@@ -333,7 +370,11 @@
                 "redondeo": 31.5,
                 "tamañoLetra": 18,
                 "tipoLetra": "Mullish",
-                "comando": "registrar"
+                "comando": "cambiarFrameRegistrar",
+                "fila":5,
+                "columna":1,
+                "posicion":"CENTER",
+                "y":3
             }
         ],
         "camposTexto": [
@@ -346,7 +387,10 @@
                 "alto":63,
                 "redondeo": 31.5,
                 "tamañoLetra": 18,
-                "tipoLetra": "Mullish"
+                "tipoLetra": "Mullish",
+                "fila":2,
+                "columna":1,
+                "comandoValidador":""
             },
             {
                 "texto":"Contraseña", 
@@ -357,12 +401,22 @@
                 "alto":63,
                 "redondeo": 31.5,
                 "tamañoLetra": 18,
-                "tipoLetra": "Mullish"
+                "tipoLetra": "Mullish",
+                "fila":3,
+                "columna":1,
+                "tipo":"*",
+                "comandoValidador":""
             }
         ],
         "textos":[
             {
-                "imagen":"src/util/img/contacto.png"
+                "imagen":"src/util/img/contacto.png",
+                "direccionImg": "left",
+                "anchoImg": 100,
+                "altoImg": 69,
+                "fila": 0,
+                "columna": 1,
+                "posicion":"center"
             },
             {
                 "texto":"Inicio Sesión", 
@@ -371,7 +425,20 @@
                 "ancho":700,
                 "alto": 64,
                 "tamañoLetra": 36,
-                "tipoLetra": "Mullish"
+                "tipoLetra": "Mullish",
+                "fila": 1,
+                "columna": 1,
+                "posicion":"center"
+            }
+        ],
+        "ventanaMensaje":[
+            {
+                "texto":"Usuario no encontrado, el email o contraseña son incorrectos",
+                "fondoColor": "#FFFFFE", 
+                "textColor":"#060505", 
+                "tipoLetra": "Mullish",
+                "icono":"cancel",
+                "titulo":"Error"
             }
         ]
         
@@ -389,7 +456,28 @@
                 "redondeo": 31.5,
                 "tamañoLetra": 18,
                 "tipoLetra": "Mullish",
-                "comando": "registrar"
+                "comando": "modificar",
+                "fila":5,
+                "columna":1,
+                "posicion":"CENTER",
+                "y":3
+            },
+            {
+                "text": "Cancelar", 
+                "fondoColor": "#5E0E90", 
+                "textColor":"#F5F4F2", 
+                "bordeColor":"#5E0E90",
+                "fondoColorMouse": "#8A4CF6",
+                "ancho": 319,
+                "alto": 63,
+                "redondeo": 31.5,
+                "tamañoLetra": 18,
+                "tipoLetra": "Mullish",
+                "comando": "frameContactos",
+                "fila":6,
+                "columna":1,
+                "posicion":"CENTER",
+                "y":3
             }
         ],
         "camposTexto": [
@@ -402,18 +490,10 @@
                 "alto":63,
                 "redondeo": 31.5,
                 "tamañoLetra": 18,
-                "tipoLetra": "Mullish"
-            },
-            {
-                "texto":"Apellido", 
-                "fondoColor": "#F5F4F2", 
-                "textColor":"#241C1C", 
-                "bordeColor":"#F5F4F2",
-                "ancho":319,
-                "alto":63,
-                "redondeo": 31.5,
-                "tamañoLetra": 18,
-                "tipoLetra": "Mullish"
+                "tipoLetra": "Mullish",
+                "fila":2,
+                "columna":1,
+                "comandoValidador":""
             },
             {
                 "texto":"Teléfono", 
@@ -424,7 +504,10 @@
                 "alto":63,
                 "redondeo": 31.5,
                 "tamañoLetra": 18,
-                "tipoLetra": "Mullish"
+                "tipoLetra": "Mullish",
+                "fila":4,
+                "columna":1,
+                "comandoValidador":""
             }
         ],
         "textos":[
@@ -435,9 +518,116 @@
                 "ancho":700,
                 "alto": 64,
                 "tamañoLetra": 36,
-                "tipoLetra": "Mullish"
+                "tipoLetra": "Mullish",
+                "fila": 1,
+                "columna": 1,
+                "posicion":"center"
             }
-        ]
+        ],
+        "ventanaMensaje":[
+            {
+                "texto":"Contacto modificado satisfactoriamente",
+                "fondoColor": "#FFFFFE", 
+                "textColor":"#060505", 
+                "tipoLetra": "Mullish",
+                "icono":"check",
+                "titulo":"Modificado"
+            },
+            {
+                "texto":"El numero del contacto ya se encuentra ocupado, porfavor, ingresa otro",
+                "fondoColor": "#FFFFFE", 
+                "textColor":"#060505", 
+                "tipoLetra": "Mullish",
+                "icono":"cancel",
+                "titulo":"Error"
+            }
+        ]    
+        
+    },
+    "vistaRegistroC":{
+        "botones": [
+            {
+                "text": "Añadir", 
+                "fondoColor": "#5E0E90", 
+                "textColor":"#F5F4F2", 
+                "bordeColor":"#5E0E90",
+                "fondoColorMouse": "#8A4CF6",
+                "ancho": 319,
+                "alto": 63,
+                "redondeo": 31.5,
+                "tamañoLetra": 18,
+                "tipoLetra": "Mullish",
+                "comando": "registrarContacto",
+                "fila":5,
+                "columna":1,
+                "posicion":"CENTER",
+                "y":3
+            }
+        ],
+        "camposTexto": [
+            {
+                "texto":"Nombre Completo", 
+                "fondoColor": "#F5F4F2", 
+                "textColor":"#241C1C", 
+                "bordeColor":"#F5F4F2",
+                "ancho":319,
+                "alto":63,
+                "redondeo": 31.5,
+                "tamañoLetra": 18,
+                "tipoLetra": "Mullish",
+                "fila":2,
+                "columna":1,
+                "comandoValidador":""
+            },
+            {
+                "texto":"Teléfono", 
+                "fondoColor": "#F5F4F2", 
+                "textColor":"#241C1C", 
+                "bordeColor":"#F5F4F2",
+                "ancho":319,
+                "alto":63,
+                "redondeo": 31.5,
+                "tamañoLetra": 18,
+                "tipoLetra": "Mullish",
+                "fila":4,
+                "columna":1,
+                "comandoValidador":""
+            }
+        ],
+        "textos":[
+            {
+                "texto":"Registrar Nuevo Contacto", 
+                "fondoColor": "#FFFFFE", 
+                "textColor":"#060505", 
+                "ancho":700,
+                "alto": 64,
+                "tamañoLetra": 36,
+                "tipoLetra": "Mullish",
+                "fila": 1,
+                "columna": 1,
+                "posicion":"center"
+            }
+        ],
+        "ventanaMensaje":[
+            {
+                "texto":"Contacto registrado satisfactoriamente",
+                "fondoColor": "#FFFFFE", 
+                "textColor":"#060505", 
+                "tipoLetra": "Mullish",
+                "icono":"check",
+                "titulo":"Modificado"
+            },
+            {
+                "texto":"El numero del contacto ya se encuentra ocupado, porfavor, ingresa otro",
+                "fondoColor": "#FFFFFE", 
+                "textColor":"#060505", 
+                "tipoLetra": "Mullish",
+                "icono":"cancel",
+                "titulo":"Error"
+            }
+        ]    
+        
         
     }
+
 }

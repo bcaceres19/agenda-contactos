@@ -8,7 +8,6 @@ CREATE TABLE agenda.contactos (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nombreContacto VARCHAR(250) NOT NULL,
     numeroTelefono VARCHAR(11) NOT NULL,
-    codigoPais VARCHAR(3) NOT NULL,
     idUsuario INT NOT NULL,
     FOREIGN KEY (idUsuario) REFERENCES usuarios (id),
     INDEX (idUsuario)
